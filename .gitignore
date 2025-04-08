@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+.venv/
+env/
+ENV/
+venv/
+pip-wheel-metadata/
+*.pyd
+*.pyo
+
+# VS Code & PyCharm
+.vscode/
+.idea/
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+local_settings.py
+*.migrations/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Static and media files (optional, if generated)
+staticfiles/
+media/
+
+# Environment Variables
+.env

@@ -1,0 +1,18 @@
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install django
+python.exe -m pip install --upgrade pip
+django-admin startproject rosokua
+cd rosokua >> python manage.py startapp core 
+settings.py >> TEMP_DIR = BASE_DIR/  "templates"
+TEMPLATES >> "DIRS": [TEMP_DIR]
+Make 'templates' folder in rosokua app
+settings.py>>INSTALLLED_APPS>>  Add "core",
+settings.py>> STATICFILES_DIRS 
+Make "static" folder in rosokua app
+Paste "index.html" from bethany in the rosokua app >> template >> core folder
+Paste assets from bethany in the rosokua app >> static folder
+Load static in the index.html
+create "urls.py" file in the core app in the rosokua 
+rosokua>> urls.py >> urlpatterns >> add path('',include('core.urls'))
+core >> urls.py >> from django.urls import path >> urlpatterns >> path('', views.index, name='index')
